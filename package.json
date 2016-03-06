@@ -1,0 +1,24 @@
+{
+  "name": "sign-bunny",
+  "version": "0.0.1",
+  "description": "A package to create a sign bunny character.",
+  "homepage": "https://github.com/ryanbahniuk/sign-bunny",
+  "author": {
+    "name": "Ryan Bahniuk",
+    "email": "ryan.bahniuk@gmail.com",
+    "url": "http://bahni.uk"
+  },
+  "main": "main.js",
+  "engines": {
+    "node": ">= 5.3.0"
+  },
+  "scripts": {
+    "test": "mocha",
+    "pretest": "eslint ."
+  },
+  "devDependencies": {
+    "chai": "^3.5.0",
+    "eslint": "^1.10.3",
+    "mocha": "^2.4.5"
+  }
+}
