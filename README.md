@@ -2,11 +2,19 @@
 > A package to create a sign bunny character.
 
 |￣￣￣￣￣￣|
+
 | BEST     |
+
 | NPM      |
+
 | PACKAGE  |
+
 | EVER     |
+
 |＿＿＿＿＿＿|
-(\__/) ||
+
+(\\__/) ||
+
 (•ㅅ•) ||
+
 / 　 づ
