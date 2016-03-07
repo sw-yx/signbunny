@@ -4,7 +4,7 @@ const MAX_SIGN_WIDTH = 10;
 const LINE_DELIMITER = '\n';
 
 function buildBunny() {
-  return '(\__/) ||\n(•ㅅ•) ||\n/ 　 づ';
+  return '(\\__/) ||\n(•ㅅ•) ||\n/ 　 づ';
 }
 
 function buildBottomOfSign() {
