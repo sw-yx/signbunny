@@ -6,10 +6,10 @@ const assert = require('chai').assert;
 const exec = require('child_process').exec;
 
 describe('Integration Tests', () => {
-  var output;
+  let output;
 
   beforeEach(() => {
-    var outputFixturePath = path.resolve(__dirname, 'fixtures', 'output.txt');
+    const outputFixturePath = path.resolve(__dirname, 'fixtures', 'output.txt');
     output = fs.readFileSync(outputFixturePath, {
       encoding: 'utf8'
     });
