@@ -3,5 +3,5 @@
 
 const signBunny = require('../src/sign-bunny');
 
-const input = process.argv[2];
+const input = process.argv.slice(2).join(' ');
 console.log(signBunny(input));
