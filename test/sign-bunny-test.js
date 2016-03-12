@@ -3,7 +3,7 @@
 const assert = require('chai').assert;
 const signBunny = require('../src/sign-bunny');
 
-describe('signBunny', () => {
+describe('#signBunny', () => {
   let input;
 
   beforeEach(() => {
@@ -13,7 +13,7 @@ describe('signBunny', () => {
   it('should return the complete sign bunny string with upper case letters', () => {
     assert.strictEqual(
       signBunny(input),
-      '|￣￣￣￣￣￣￣￣￣￣|\n| NO     |\n| MOAR   |\n| TESTS  |\n|＿＿＿＿＿＿＿＿＿＿|\n(\\__/) ||\n(•ㅅ•) ||\n/ 　 づ'
+      '|-----------|\n| NO        |\n| MOAR      |\n| TESTS     |\n|-----------|\n(\\__/) ||\n(•ㅅ•) ||\n/ 　 づ'
     );
   });
 });

@@ -1,18 +1,14 @@
 'use strict';
 
-const MAX_SIGN_WIDTH = 10;
+const MAX_SIGN_WIDTH = 13;
 const LINE_DELIMITER = '\n';
 
 function buildBunny() {
   return '(\\__/) ||\n(•ㅅ•) ||\n/ 　 づ';
 }
 
-function buildBottomOfSign() {
-  return `|${'＿'.repeat(MAX_SIGN_WIDTH)}|`;
-}
-
-function buildTopOfSign() {
-  return `|${'￣'.repeat(MAX_SIGN_WIDTH)}|`;
+function buildSignBoundary() {
+  return `|${'-'.repeat(MAX_SIGN_WIDTH - 2)}|`;
 }
 
 function buildMiddleOfSign(inputArr) {
@@ -25,9 +21,9 @@ function buildMiddleOfSign(inputArr) {
 
 function buildSign(inputArr) {
     return [
-            buildTopOfSign(),
+            buildSignBoundary(),
             buildMiddleOfSign(inputArr),
-            buildBottomOfSign(),
+            buildSignBoundary(),
             buildBunny()
            ].join(LINE_DELIMITER);
 }
