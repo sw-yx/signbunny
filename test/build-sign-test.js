@@ -18,7 +18,14 @@ describe('#buildSign', () => {
     it('should return the complete sign string', () => {
       assert.strictEqual(
         buildSign(inputArr),
-        '|-----------|\n| NO        |\n| MOAR      |\n| TESTS     |\n|-----------|\n(\\__/) ||\n(•ㅅ•) ||\n/ 　 づ'
+        '|-----------|\n' +
+        '| NO        |\n' +
+        '| MOAR      |\n' +
+        '| TESTS     |\n' +
+        '|-----------|\n' +
+        '(\\__/) ||\n' +
+        '(•ㅅ•) ||\n' +
+        '/ 　 づ'
       );
     });
   });
