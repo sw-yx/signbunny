@@ -12,11 +12,21 @@ function buildSignBoundary() {
 }
 
 function buildMiddleOfSign(inputArr) {
-  const lines = inputArr.map((word) => {
+  const lines = [];
+  inputArr.forEach((word) => {
     if (word.length > (MAX_SIGN_WIDTH - 3)) throw 'One of your words is too long.'
-    return `| ${word}${' '.repeat(MAX_SIGN_WIDTH - 3 - word.length)}|`;
+    if (lines.length == 0) {
+      lines.push(word)
+      return;
+    }
+    const lastLine = lines[lines.length - 1];
+    if(lastLine.length + 1 + word.length > (MAX_SIGN_WIDTH - 3)) {
+      lines.push(word);
+      return;
+    }
+    lines[lines.length - 1] = lastLine + ' ' + word;
   });
-  return lines.join(LINE_DELIMITER);
+  return lines.map((line) => `| ${line}${' '.repeat(MAX_SIGN_WIDTH - 3 - line.length)}|` ).join(LINE_DELIMITER);
 }
 
 function buildSign(inputArr) {

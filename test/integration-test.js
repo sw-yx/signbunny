@@ -16,7 +16,7 @@ describe('Integration Tests', () => {
   });
 
   it('outputs the correct sign bunny', (done) => {
-    let worker = exec('./bin/sign-bunny no moar tests', (_error, stdout) => {
+    let worker = exec('./bin/sign-bunny no!! mooar! tests!', (_error, stdout) => {
       assert.strictEqual(stdout, output);
     });
 
