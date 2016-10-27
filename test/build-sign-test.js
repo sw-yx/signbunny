@@ -9,9 +9,9 @@ describe('#buildSign', () => {
   context('when all the words are shorter than the max width', () => {
     beforeEach(() => {
       inputArr = [
-        'NO',
-        'MOAR',
-        'TESTS'
+        'NO!!',
+        'MOOAR!',
+        'TESTS!'
       ];
     });
 
@@ -19,9 +19,36 @@ describe('#buildSign', () => {
       assert.strictEqual(
         buildSign(inputArr),
         '|-----------|\n' +
-        '| NO        |\n' +
-        '| MOAR      |\n' +
-        '| TESTS     |\n' +
+        '| NO!!      |\n' +
+        '| MOOAR!    |\n' +
+        '| TESTS!    |\n' +
+        '|-----------|\n' +
+        '(\\__/) ||\n' +
+        '(•ㅅ•) ||\n' +
+        '/ 　 づ'
+      );
+    });
+  });
+
+  context('when there are short words that can fit on the same line', () => {
+    beforeEach(() => {
+      inputArr = [
+        'I',
+        'AM',
+        'A',
+        'CUTE',
+        'BUNNY',
+        '!'
+      ];
+    });
+
+    it('should return the complete sign string', () => {
+      assert.strictEqual(
+        buildSign(inputArr),
+        '|-----------|\n' +
+        '| I AM A    |\n' +
+        '| CUTE BUNNY|\n' +
+        '| !         |\n' +
         '|-----------|\n' +
         '(\\__/) ||\n' +
         '(•ㅅ•) ||\n' +
