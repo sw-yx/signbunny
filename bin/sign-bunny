@@ -3,5 +3,18 @@
 
 const signBunny = require('../src/sign-bunny');
 
-const input = process.argv.slice(2).join(' ');
-console.log(signBunny(input));
+let str = ''
+process.stdin.on('readable', function() {
+  var chunk = process.stdin.read();
+  if (chunk !== null) {
+    str += chunk
+    // process.stdout.write(chunk);
+  }
+});
+
+process.stdin.on('end', function() {
+  const input = process.argv.slice(2).join(' ') + str.trim();
+  console.log(input);
+  console.log(signBunny(input));
+  // process.stdout.write('end');
+});

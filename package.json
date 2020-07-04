@@ -1,32 +1,28 @@
 {
-  "name": "sign-bunny",
-  "version": "1.0.0",
+  "name": "signbunny",
+  "version": "0.0.1",
   "description": "A package to create a sign bunny character.",
-  "homepage": "https://github.com/ryanbahniuk/sign-bunny",
+  "homepage": "https://github.com/sw-yx/signbunny",
   "keywords": [
     "sign",
     "bunny",
     "sign bunny"
   ],
-  "author": {
-    "name": "Ryan Bahniuk",
-    "email": "ryan.bahniuk@gmail.com",
-    "url": "http://bahni.uk"
-  },
   "bin": {
-    "sign-bunny": "./bin/sign-bunny"
+    "sb": "bin/sign-bunny",
+    "signbunny": "bin/sign-bunny"
   },
   "repository": {
     "type": "git",
-    "url": "git://github.com/ryanbahniuk/sign-bunny.git"
+    "url": "git://github.com/sw-yx/signbunny.git"
   },
   "bugs": {
-    "url": "https://github.com/ryanbahniuk/sign-bunny/issues"
+    "url": "https://github.com/sw-yx/signbunny/issues"
   },
   "licenses": [
     {
       "type": "MIT",
-      "url": "https://github.com/ryanbahniuk/sign-bunny/blob/master/LICENSE-MIT"
+      "url": "https://github.com/sw-yx/signbunny/blob/master/LICENSE-MIT"
     }
   ],
   "main": "./src/sign-bunny.js",
@@ -41,5 +37,11 @@
     "chai": "^3.5.0",
     "eslint": "^1.10.3",
     "mocha": "^2.4.5"
-  }
+  },
+  "directories": {
+    "test": "test"
+  },
+  "dependencies": {},
+  "author": "swyx",
+  "license": "MIT"
 }
