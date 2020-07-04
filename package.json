@@ -31,11 +31,15 @@
   },
   "scripts": {
     "test": "mocha",
-    "pretest": "eslint ."
+    "pretest": "eslint .",
+    "version": "auto-changelog -p --template keepachangelog && git add CHANGELOG.md",
+    "prepublishOnly": "git push && git push --tags && gh-release"
   },
   "devDependencies": {
+    "auto-changelog": "^2.2.0",
     "chai": "^3.5.0",
     "eslint": "^1.10.3",
+    "gh-release": "^3.5.0",
     "mocha": "^2.4.5"
   },
   "directories": {
