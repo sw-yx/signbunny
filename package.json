@@ -1,5 +1,5 @@
 {
-  "name": "signbunny",
+  "name": "@sw-yx/signbunny",
   "version": "0.0.2",
   "description": "A package to create a sign bunny character.",
   "homepage": "https://github.com/sw-yx/signbunny",
@@ -33,7 +33,7 @@
     "test": "mocha",
     "pretest": "eslint .",
     "version": "auto-changelog -p --template keepachangelog && git add CHANGELOG.md",
-    "prepublishOnly": "git push && git push --tags && gh-release"
+    "xprepublishOnly": "git push && git push --tags && gh-release"
   },
   "devDependencies": {
     "auto-changelog": "^2.2.0",
